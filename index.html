@@ -4,24 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/reset.css">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
     <title>Vite & Tailwind</title>
   </head>
-  <body class="bg-lime-200">
-<div class="container w-screen flex flex-col  justify-center items-center h-screen">
-  
-  <div class="quiz flex gap-1 flex-col bg-gray-100 py-16 px-32 rounded-xl border bord border-zinc-800">
-    <h1 class="text-4xl mb-4 text-center">Quiz</h1>
-    <h2 class="text-l text-center mb-2" id="question">Ciudad capital de España por donde fluyen</h2>
-    <div class=" w-60 flex flex-col gap-2" id="choices">
+  <body class="w-full">
+    <header class="p-4 flex justify-between bg-yellow-500">
+      <h3 class="mt-1 ml-2 text-xl font-semibold text-zinc-900">Quiz orientado a objetos JS</h3>
+      <button class="bg-yellow-600 px-4 py-2 rounded-2xl font-semibold hover:bg-yellow-500 hover:font-bold">Contact me</button>
+    </header>
+<div class="container h-screen w-2/3 mx-auto">
+  <div class="quiz mt-40 bg-indigo-400 py-12 px-1 rounded-lg border bord border-zinc-800">
+    <h1 class="font-semibold text-3xl mb-4 text-center">Quiz</h1>
+    <h2 class="text-center mb-3 text-xl" id="question">Ciudad capital de España por donde fluyen</h2>
+    <div class="flex flex-col justify-center itemes-center gap-3" id="choices">
     </div>
     
     <footer>
-      <p class="text-center" id="progress">Question x of y</p>
+      <p class="text-center mt-4" id="progress">Question x of y</p>
       </footer>
-
-    </div>
   </div>
+</div>
    
     <script type="module" src="/app.js"></script>
   </body>

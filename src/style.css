@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url(../public/illustration-4940622_1920.jpg)center/cover
+}
+
+h1::first-letter{
+    font-size: 160%;
+  }
+
+
+
+header,
+.quiz,
+.btn {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.btn{
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 179 8 / var(--tw-bg-opacity));    
+    border-radius: 15px;
+    margin-bottom:1rem;
+    width:50%;
+    color: black;
+    margin: 0 auto;
+    text-transform: capitalize;
+    height: 2rem;
+}
+.btn:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(202 138 4 / var(--tw-bg-opacity));
+}
+

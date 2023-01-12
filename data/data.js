@@ -13,5 +13,10 @@ export const data = [
     question: 'Cual no sirve para estilizar webs',
     choices: ['java', 'bootstrap', 'tailwind', 'css'],
     answer: 'java'
+  },
+  {
+    question: 'Genero musical en el que destacó 2pac Shakur',
+    choices: ['rumba', 'jazz', 'soul', 'rap'],
+    answer: 'java'
   }
 ]
